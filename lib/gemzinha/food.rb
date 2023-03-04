@@ -13,5 +13,9 @@ module Gemzinha
     def self.pluralize(word)
       word.pluralize
     end
+
+    def self.hello_world
+      puts "Hello Earth"
+    end
   end
 end

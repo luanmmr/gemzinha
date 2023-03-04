@@ -1,9 +1,11 @@
+require "gemzinha"
+
 RSpec.describe Gemzinha do
-  it "has a version number" do
-    expect(Gemzinha::VERSION).not_to be nil
+  it "broccoli is gross" do
+    expect(Gemzinha::Food.portray("Broccoli")).to eql("Gross!")
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "anything else is delicious" do
+    expect(Gemzinha::Food.portray("Not Broccoli")).to eql("Delicious!")
   end
 end

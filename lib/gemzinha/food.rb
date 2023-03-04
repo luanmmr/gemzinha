@@ -1,3 +1,5 @@
+require 'active_support/inflector'
+
 module Gemzinha
   class Food
     def self.portray(food)
@@ -6,6 +8,10 @@ module Gemzinha
       else
         "Delicious!"
       end
+    end
+
+    def self.pluralize(word)
+      word.pluralize
     end
   end
 end
